@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefWidth="350.0" prefHeight="550.0"
+            xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="app.MainController">
+
+    <top>
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label text="Enter a word" />
+            <TextField fx:id="wordField" prefWidth="120" />
+            <Button fx:id="beginButton" text="Begin" />
+            <Button fx:id="animateButton" text="Animate" />
+        </HBox>
+    </top>
+
+    <left>
+        <VBox fx:id="letterBox" spacing="10" prefWidth="50">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+        </VBox>
+    </left>
+
+    <center>
+        <Pane />
+    </center>
+
+</BorderPane>
